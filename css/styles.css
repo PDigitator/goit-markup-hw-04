@@ -15,6 +15,7 @@
   --button-active-color: #188ce8;
   --primary-bgc: #fff;
   --secondary-bgc: #2f303a;
+  --hero-bgc: #c4c4c4;
   --team-bgc: #f5f4fa;
   --header-border-color: #ececec;
   --portfolio-list-item-border-color: #eeeeee;
@@ -149,7 +150,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--secondary-bgc);
+  background-color: var(--hero-bgc);
 }
 
 .hero-title {
@@ -400,6 +401,12 @@ img {
 .portfolio .link:hover,
 .portfolio .link:focus {
   color: var(--accent-color);
+}
+
+/* TODO: ПЕРЕВІРИТИ shadow */
+.portfolio .card-set-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-container {
