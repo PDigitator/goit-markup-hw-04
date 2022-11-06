@@ -271,7 +271,7 @@ img {
 /* Секція Чим ми займаємось */
 .works.list {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .works .list-item:not(:last-child) {
@@ -302,7 +302,7 @@ img {
 
 .team.list {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .team.list > .list-item:not(:last-child) {
@@ -357,25 +357,6 @@ img {
 
 /* Секція Постійні клієнти */
 
-/* TODO:уточнити margin align-items fill (color) */
-/* .clients.list {
-  display: flex;
-  align-items: flex-start;
-
-  color: var(--primary-logo-color);
-}
-
-.clients .link:hover,
-.clients .link:focus {
-  color: var(--accent-color);
-}
-
-.clients .list-item:not(:last-child) {
-  margin-right: 30px;
-}
-.client-icon {
-  fill: currentColor;
-} */
 .clients.list {
   display: flex;
   justify-content: center;
@@ -499,8 +480,8 @@ img {
   padding: 9px 31px;
   margin: 0 auto;
 
-  color: var(--secondary-text-color);
   background-color: var(--accent-color);
+  color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -544,7 +525,6 @@ img {
 
 .portfolio .link:hover,
 .portfolio .link:focus {
-  color: var(--accent-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -552,11 +532,6 @@ img {
 .portfolio-container {
   padding: 19px 23px;
   border: 1px solid var(--portfolio-list-item-border-color);
-}
-
-.portfolio .subtitle:hover,
-.portfolio .subtitle:focus {
-  color: var(--accent-color);
 }
 
 .portfolio-button.list {
@@ -583,9 +558,4 @@ img {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: calc(30 / 16);
-}
-
-.portfolio .text:hover,
-.portfolio .text:focus {
-  color: var(--accent-color);
 }
