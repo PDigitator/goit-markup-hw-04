@@ -6,14 +6,15 @@
   /* Text colors */
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --secondary-text-color: #fff;
+  --secondary-text-color: #ffffff;
   --footer-text-color: rgba(255, 255, 255, 0.6);
-  --rare-text-color: #000;
+  --rare-text-color: #000000;
   --accent-color: #2196f3;
+  --primary-logo-color: #afb1b8;
 
   /* BG colors */
   --button-active-color: #188ce8;
-  --primary-bgc: #fff;
+  --primary-bgc: #ffffff;
   --secondary-bgc: #2f303a;
   --hero-bgc: #c4c4c4;
   --team-bgc: #f5f4fa;
@@ -110,7 +111,7 @@ img {
 .contacts.list {
   margin-left: auto;
 }
-/* ofh;qwhtco */
+
 .site-nav.list .link {
   padding: 32px 0 31px 0;
 
@@ -131,6 +132,8 @@ img {
 }
 
 .contacts .link {
+  display: inline-flex;
+  align-items: center;
   padding: 32px 0 31px 0;
 
   color: var(--primary-text-color);
@@ -145,12 +148,20 @@ img {
   color: var(--accent-color);
 }
 
+.contacts-icon {
+  fill: currentColor;
+}
+
 /* <!-- Герой --> */
+
+/* TODO: ПЕРЕВІРИТИ ФОН */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
 
   background-color: var(--hero-bgc);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
 }
 
 .hero-title {
@@ -214,7 +225,8 @@ img {
 
 .features .section-title,
 .works .section-title,
-.team .section-title {
+.team .section-title,
+.clients .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -260,7 +272,7 @@ img {
   background-color: var(--team-bgc);
 }
 
-.team .list-item {
+.team.list > .list-item {
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -270,7 +282,7 @@ img {
 }
 
 .team-container {
-  padding: 30px 24px;
+  padding: 30px 32px;
 }
 
 .team.list {
@@ -278,7 +290,7 @@ img {
   align-content: flex-start;
 }
 
-.team .list-item:not(:last-child) {
+.team.list > .list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -292,9 +304,62 @@ img {
 }
 
 .team .text {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+}
+
+.team-container .social-links.list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.social-links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: var(--primary-bgc);
+  color: var(--primary-logo-color);
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+.social-links-icon {
+  fill: currentColor;
+}
+
+/* Секція Постійні клієнти */
+
+/* TODO:уточнити margin align-content fill (color) */
+.clients.list {
+  display: flex;
+  align-content: flex-start;
+
+  color: var(--primary-logo-color);
+}
+
+.clients .link:hover,
+.clients .link:focus {
+  color: var(--accent-color);
+}
+
+.clients .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.client-icon {
+  fill: currentColor;
 }
 
 /* <!-- Підвал --> */
@@ -303,6 +368,15 @@ img {
   padding-bottom: 60px;
 
   background-color: var(--secondary-bgc);
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.container-adress {
+  margin-right: 95px;
 }
 
 .footer .logo {
@@ -340,6 +414,29 @@ img {
   font-size: 14px;
   line-height: calc(24 / 14);
 }
+
+.follow {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+/* .social-links.list {
+  display: flex;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  color: var(--accent-color);
+}
+
+.social-links-icon {
+  fill: currentColor;
+} */
 
 /* Кнопки */
 .button {
@@ -398,13 +495,13 @@ img {
   background-color: var(--accent-color);
 }
 
+.portfolio.card-set-item {
+  display: inline-flex;
+}
+
 .portfolio .link:hover,
 .portfolio .link:focus {
   color: var(--accent-color);
-}
-
-/* TODO: ПЕРЕВІРИТИ shadow */
-.portfolio .card-set-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
