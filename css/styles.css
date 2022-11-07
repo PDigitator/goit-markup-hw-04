@@ -164,10 +164,14 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--hero-bgc);
+  
+}
+.hero .container {
+backgroundу-color: var(--hero-bgc);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
 }
+
 
 .hero-title {
   width: 696px;
