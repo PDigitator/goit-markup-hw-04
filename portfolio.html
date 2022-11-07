@@ -34,17 +34,27 @@
           <a href="/" lang="en" class="link logo"><span class="logo-part">Web</span>Studio</a>
           <!-- TODO: замінити посилання ./index.html на дійсне -->
           <ul class="site-nav list">
-            <li class="list-item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="list-item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+            <li class="list-item"><a href="./index.html" class="link current">Студія</a></li>
+            <li class="list-item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
             <li class="list-item"><a href="./index.html" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contacts list">
           <li class="list-item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="list-item">
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -163,26 +173,90 @@
     <!-- Підвал -->
     <footer class="footer">
       <div class="container">
-        <a href="/" lang="en" class="link logo"><span class="logo-part">Web</span>Studio</a>
-        <address>
-          <ul class="address list">
-            <li>
+        <div class="container-adress">
+          <a href="/" lang="en" class="link logo"><span class="logo-part">Web</span>Studio</a>
+          <address>
+            <ul class="address list">
+              <li>
+                <a
+                  href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ehbc=2E312F"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link post"
+                  >м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="link tel">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="container-follow">
+          <p class="follow">приєднуйтесь</p>
+          <ul class="social-links list">
+            <li class="list-item">
               <a
-                href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ehbc=2E312F"
+                href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="link post"
-                >м. Київ, пр-т Лесі Українки, 26
+                lang="en"
+                aria-label="Instagram icon"
+                class="link"
+              >
+                <svg class="social-links-icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
               </a>
             </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <li class="list-item">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                lang="en"
+                aria-label="Twitter icon"
+                class="link"
+              >
+                <svg class="social-links-icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <li class="list-item">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                lang="en"
+                aria-label="Facebook icon"
+                class="link"
+              >
+                <svg class="social-links-icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-item">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                lang="en"
+                aria-label="Linkedin icon"
+                class="link"
+              >
+                <svg class="social-links-icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
