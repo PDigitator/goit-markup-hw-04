@@ -169,6 +169,7 @@ img {
     url(../images/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
